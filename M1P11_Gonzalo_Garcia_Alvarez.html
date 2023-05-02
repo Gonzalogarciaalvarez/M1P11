@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Práctica 11</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <!--Inputs para la introduccion de datos personales con un estilo sencillo al centro--> 
+    <form  action="/formulario" method="post">
+    <fieldset name="DatosPersonales">
+      <legend>Datos Personales</legend>
+      <label>Nombre <input type="text" required></label>
+      <label>Apellidos <input type="text"></label>
+      <p>Genero <select name="genero">
+        <option>Hombre</option>
+        <option>Mujer</option>
+      </select></p>
+      <label>Fecha de nacimiento <input type="date"/></label>>
+      <p>Telefono <input type="tel"></p>
+      <p>Direccion <input type="text"></p>
+      <p>Email <input type="email" required></p>
+      <p>Contraseña <input type="password" required></p>
+      <label>Numero de asignaturas matriculadas <input type="number" value="1" min="1" max="15"/></label>
+      <p>Curso Matriculado <select name="curso">
+        <option>Desarrollo de Aplicaciones Web y Movil</option>
+        <option>Big Data</option>
+        <option>Diseño Grafico y Diseño Web</option>
+        <option>Informática e Información</option>
+      </select></p>
+      <p>Aceptas los terminos y condiciones del registro?</p>
+      <!--En vez de hacerlo en checkbox preferi hacerlo con radio para que solo se pudiese seleccionar una opcion.
+          Mas que nada porque no se hacer que solo se pueda seleccionar una opcion con los checkbox.
+          Por eso te lo habia preguntado en la anterior entrega, pero espero que valga asi, me parece que tiene mas sentido de esta forma. -->
+      <label><input type="radio" name="terminos" value="Si"/>Si </label>
+      <label><input type="radio" name="terminos" value="No"/>No </label>
+      </fieldset>
+      <br>
+      <input type="submit"/>
+    </form>
+  </body>
+</html>
